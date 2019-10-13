@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 上面為css reset */
+
+
+html{
+  background-color: #a3aa67;
+}
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container{
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(107, 107, 107);
+  min-height: 550px;
+  max-width: 500px;
+  min-width: 300px;
+  margin-top: 80px;
+}
+@media(max-width:767px){
+  .content-container{
+      margin-top: 20px;
+      margin: 25px 15px 25px 15px;
+  }
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form-wrap{
+  text-align: center;
+}
+
+.content-title{
+  color: #69b9c3;
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 20px;
+  display: block;
+}
+.input-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-input{
+  width: 65%;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 0 5px;
+  border-bottom-right-radius: 10px 3px;
+  border-bottom-left-radius: 3px 10px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px ;
+  font-family: Microsoft JhengHei;
+}
+.content-input:focus{
+  border: solid 3px #69b9c3;
+  outline: none;
+  margin-right: 5px;
+  transition: all 0.3s;
+}
+
+
+.btn{
+  box-sizing: border-box;
+  height: 36px;
+  width: 50px;
+  background-color: #69b9c3;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.point-line{
+  display: none;
+}
+.btn:hover{
+  box-shadow:0 0 3px #666
+}
+.btn:hover .point-line{
+  display: inline;
+
+}
+.btn:active .point-line{
+  display: inline;
+}
+
+.list-wrap{
+  margin-top:30px;
+  line-height: 40px;
+  font-family: Microsoft JhengHei;
+}
+.list-wrap>ul li{
+  padding-left:10%;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  color: #444;
+  text-shadow: 0.5px 0.5px 1px #888;
+  font-size: 20px;
+}
+.btn-remove{
+  color: red;
+}
+.check-space{
+  width: 20px;
+  height: 20px;
+  border: 3px solid #69b9c3;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.check-space-onloading{
+  border: 3px solid transparent;
+}
+.checkIcon{
+  position: absolute;
+  left: -1px;
+  font-size: 30px;
+  bottom: 1px;
+  color: red;
+  display: none;
+}
+.showIcon{
+  display: inline-block;
+}
+
+/*placeholder設定*/
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:rgb(197, 95, 64);
+  font-family: 'Gochi Hand', cursive;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:rgb(197, 95, 64);
+  font-family: 'Gochi Hand', cursive;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:rgb(197, 95, 64);
+  font-family: 'Gochi Hand', cursive;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:rgb(197, 95, 64) ;
+  font-family: 'Gochi Hand', cursive;
+}
